@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+
+    .container{
+        width: 100%;
+        height: 100%;
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7rem;
+        background: url('https://asset.gecdesigns.com/img/wallpapers/yoga-day-wallpaper-human-meditate-in-a-lotus-pose-yoga-activates-seven-chakras-with-a-beautiful-aura-background-sr20062417-cover.webp');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+
+        nav{
+            width: 100%;
+            display: flex;
+            padding: 40px 20px;
+            justify-content: space-between;
+
+            h1{
+                font-size: 3rem;
+                color: #fff ;
+                font-weight: 900;
+
+
+                @media screen and (max-width:400px) {
+                    font-size: 2rem;
+                }
+            }
+            .crossBtn{
+                cursor: pointer;
+            }
+        }
+        .circle{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            position: relative;
+            
+            background: conic-gradient(#75b2f0 0%, rgb(52, 120, 221) 40%, rgb(227, 236, 139) 40%, rgb(190, 201, 176) 60%, #a162e0 60%, #e660b9 100%);
+
+            .uper{
+                width: 285px;
+                height: 285px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                color: #fff;
+                z-index: 999;
+                background: linear-gradient(75deg, #a162e0, rgb(52, 120, 221));
+
+                img{
+                    width: 70px;
+                    border-radius: 20px;
+                    cursor: pointer;
+                }
+                .one{
+                    display: none;
+                }
+                .two{
+                    display: none;
+                }
+                .three{
+                    display: none;
+                }
+
+                
+            }
+
+            .bahar{
+                width: 300px;
+                height: 300px;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        
+    }
+}
+.ghumo{
+    animation: cir 5s linear  infinite  backwards;
+}
+@keyframes cir {
+    0%{
+        top: 0;
+    }
+    25%{
+        transform: scale(1.3);
+    }
+    50%{
+        transform: scale(1.3);
+    }
+    75%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.bahar::before{
+    content: "";
+    position: absolute;
+    top: -30px;
+    width: 17px; 
+    left: 50%;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #fff;
+
+
+}
+@keyframes ghar {
+    0% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+
+#loading{
+    height: 100vh;
+    width: 100%;
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #53AEE1;
+    z-index: 999999;
+}
+
+#loading h3 {
+    color: rgb(255, 255, 255);
+    font-size: 3vw;
+    position: relative;
+    padding: 1vw 3vw;
+}
+
+#loading h3 span{
+    color: rgba(0, 0, 0, 0.0);
+    animation: lightmove 4s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes lightmove {
+    0%{
+        opacity: 0;
+        color: rgba(0,0,0,0.0);
+    }
+    20%{
+        opacity: 1;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    
+    50%{
+        opacity: 0;
+        color: rgba(0,0,0,0.0);
+    }
+    100%{
+        opacity: 0;
+        color: rgba(0,0,0,0.0);
+    }
+}

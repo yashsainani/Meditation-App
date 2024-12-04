@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/663b21e10a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="music.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="loading">
+            <h3>
+                <span style="--i:1">W</span>
+                <span style="--i:2">a</span>
+                <span style="--i:3">i</span>
+                <span style="--i:4">t</span>
+                <span style="--i:5">-</span>
+                <span style="--i:6">F</span>
+                <span style="--i:7">o</span>
+                <span style="--i:8">r</span>
+                <span style="--i:9">-</span>
+                <span style="--i:10">a</span>
+                <span style="--i:11">-</span>
+                <span style="--i:12">W</span>
+                <span style="--i:13">h</span>
+                <span style="--i:14">i</span>
+                <span style="--i:15">l</span>
+                <span style="--i:16">e</span>
+                <span style="--i:17">-</span>
+                <span style="--i:18">I</span>
+                <span style="--i:19">t</span>
+                <span style="--i:20">'</span>
+                <span style="--i:21">s</span>
+                <span style="--i:22">-</span>
+                <span style="--i:23">L</span>
+                <span style="--i:24">o</span>
+                <span style="--i:25">a</span>
+                <span style="--i:26">d</span>
+                <span style="--i:27">i</span>
+                <span style="--i:28">n</span>
+                <span style="--i:29">g</span>
+                
+            </h3>
+      </div>
+
+        <nav class="noob">
+            <img src="https://umatter.netlify.app/images/home-img/logo.svg" alt="">
+            <div class="ham">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+        </nav>
+        <div class="hamburgur">
+            <div class="home">
+                <i class="fa-solid fa-house-chimney abc"></i>
+                <p>Home</p>
+            </div>
+            <div class="music">
+                <i class="fa-solid fa-music" ></i>
+                <p>Music</p>
+            </div>
+            <div class="scene">
+                <i class="fa-solid fa-mountain" ></i>
+                <p>Scene</p>
+            </div>
+            <div class="relax">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <p>Relax & Breathe</p>
+            </div>
+            <div class="talk">
+                <i class="fa-sharp fa-solid fa-comments"></i>
+                <p>Talk To Hope</p>
+            </div>
+        </div>
+        <aside>
+            <img src="https://umatter.netlify.app/images/home-img/logo.svg" class="aaaa" alt="">
+            <a href="../index.html" class="home">
+                <i class="fa-solid fa-house-chimney abc"></i>
+                <p>Home</p>
+            </a>
+            <a  href="./music.html" class="music">
+                <i class="fa-solid fa-music" ></i>
+                <p>Music</p>
+            </a>
+            <a href="../scene/scene.html" class="scene">
+                <i class="fa-solid fa-mountain" ></i>
+                <p>Scene</p>
+            </a>
+            <a href="../relaxbreath/relax.html" class="relax">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <p>Relax & Breathe</p>
+            </a>
+            <a href="../talkToHope/talk.html" class="talk chat">
+                <i class="fa-sharp fa-solid fa-comments"></i>
+                <p>Talk To Hope</p>
+            </a>
+        </aside>
+        <main>
+
+
+            <nav class="navbar">
+                <label for="music">Music</label>
+                <select name="music" id="music">
+                    <option value="all">All</option>
+                    <option value="classical">Classical Music</option>
+                    <option value="instrumental">Instrumental</option>
+                    <option value="lofi">Lofi</option>
+                    <option value="motivating">Motivating</option>
+                    <option value="ambient">Ambient</option>
+                </select>
+            </nav>
+            <nav class="navbar-mobile">
+                <h2>MUSIC</h2>
+                <div class="options">
+                    <ol>
+                        <li id="all">all</li>
+                        <li id="ambient">ambient</li>
+                        <li id="classical">classical</li>
+                        <li id="instrumental">instrumental</li>
+                        <li id="lofi">lofi</li>
+                        <li id="motivating">motivating</li>
+                    </ol>
+                </div>
+    
+            </nav>
+            <div class="card-container">
+                <!-- <h1>card yahn aayga</h1> -->
+                <audio class="song">
+                    <source src="./music/nature-instrument/Healing Water.mp3" />
+                </audio>
+    
+                <!-- ambient card - 3 -->
+                <div class="card" data-sound="./music/ambient/all-shall-end.mp3" id="play" data-name="ambient">
+                    <div class="card-img">
+                        <img src="./music-images/ambient/all shall end.jpg" alt="" />
+                    </div>
+                    <div class="card-caption">
+                        <span>All Shall End</span>
+                        <br />
+                        <span>David Fesiliyan</span>
+                    </div>
+                </div>
+    
+                <div class="card" data-sound="./music/ambient/cathedral-ambience.mp3" id="play" data-name="ambient">
+                    <div class="card-img">
+                        <img src="./music-images/ambient/cathedral.jpg" alt="" />
+                    </div>
+                    <div class="card-caption">
+                        <span>Cathedral Ambience</span>
+                        <br />
+                        <span>David Renda</span>
+                    </div>
+                </div>
+    
+                <div class="card" data-sound="./music/ambient/serenity.mp3" id="play" data-name="ambient">
+                    <div class="card-img">
+                        <img src="./music-images/ambient/serenity.jpg" alt="" />
+                    </div>
+                    <div class="card-caption">
+                        <span>Serenity</span>
+                        <br />
+                        <span>David Renda</span>
+                    </div>
+                </div>
+    
+    
+                <!-- classical card - 2 -->
+                <div class="card" data-sound="./music/classical/Nocturne Op.9 No.2.mp3" id="play" data-name="classical">
+                    <div class="card-img">
+                        <img src="./music-images/classical/nocturne op9 no2.jpg" alt="" />
+                    </div>
+                    <div class="card-caption">
+                        <span>Nocturne Op.9 No.2</span>
+                        <br />
+                        <span>Chopin</span>
+                    </div>
+                </div>
+    
+                <div class="card" data-sound="./music/classical/pachabelly.mp3" id="play" data-name="ambient">
+                    <div class="card-img">
+                        <img src="./music-images/classical/pachabelly.jpg" alt="" />
+                    </div>
+                    <div class="card-caption">
+                        <span>Pachabelly</span>
+                        <br />
+                        <span>Huma Huma</span>
+                    </div>
+                </div>
+    
+    
+    
+                <!-- instrumental- 5 -->
+                <div class="card" data-sound="./music/instrumental/Aakash Gandhi - Falling Snow.mp3" id="play"
+                    data-name="instrumental">
+                    <div class="card-img">
+                        <img src="./music-images/instrumental/falling snow.jpg" alt="" />
+                    </div>
+                    <div class="card-caption">
+                        <span>Falling Snow</span>
+                        <br />
+                        <span>Aakash Gandhi</span>
+                    </div>
+                </div>
+    
+                <div class="card" data-sound="./music/instrumental/grief-and-emptiness.mp3" id="play"
+                    data-name="instrumental">
+                    <div class="card-img">
+                        <img src="./music-images/instrumental/grief and emptiness.jpg" alt="" />
+                    </div>
+                    <div class="card-caption">
+                        <span>Grief and Emptiness</span>
+                        <br />
+                        <span>Steve Oxen</span>
+                    </div>
+                </div>
+    
+                <div class="card" data-sound="./music/instrumental/Aakash Gandhi - Heavenly.mp3" id="play"
+                    data-name="instrumental">
+                    <div class="card-img">
+                        <img src="./music-images/instrumental/heavenly.jpg" alt="" />
+                    </div>
+                    <div class="card-caption">
+                        <span>Heavenly</span>
+                        <br />
+                        <span>Aakash Gandhi</span>
+                    </div>
+                </div>
+    
+                <div class="card" data-sound="./music/instrumental/Aakash Gandhi - Kiss the Sky.mp3" id="play"
+                    data-name="instrumental">
+                    <div class="card-img">
+                        <img src="./music-images/instrumental/kiss the sky.jpg" alt="" />
+                    </div>
+                    <div class="card-caption">
+                        <span>Kiss the Sky</span>
+                        <br />
+                        <span>Aakash Gandhi</span>
+                    </div>
+                </div>
+    
+                <div class="card" data-sound="./music/instrumental/Aakash Gandhi - Lifting Dreams.mp3" id="play"
+                    data-name="instrumental">
+                    <div class="card-img">
+                        <img src="./music-images/instrumental/lifting dreams.jpg" alt="" />
+                    </div>
+                    <div class="card-caption">
+                        <span>Lifting Dreams</span>
+                        <br />
+                        <span>Aakash Gandhi</span>
+                    </div>
+                </div>
+    
+    
+                <!-- lofi - 4 -->
+                <div class="card" data-sound="./music/lofi/done-with-work.mp3" id="play" data-name="lofi">
+                    <div class="card-img">
+                        <img src="./music-images/lofi/done with work.jpg" alt="" />
+                    </div>
+                    <div class="card-caption">
+                        <span>Done With Work</span>
+                        <br />
+                        <span>David Renda</span>
+                    </div>
+                </div>
+    
+                <div class="card" data-sound="./music/lofi/looking-up.mp3" id="play" data-name="lofi">
+                    <div class="card-img">
+                        <img src="./music-images/lofi/looking up.jpg" alt="" />
+                    </div>
+                    <div class="card-caption">
+                        <span>Looking Up</span>
+                        <br />
+                        <span>David Renda</span>
+                    </div>
+                </div>
+    
+                <div class="card" data-sound="./music/lofi/mellow-thoughts.mp3" id="play" data-name="lofi">
+                    <div class="card-img">
+                        <img src="./music-images/lofi/mellow thoughts.jpg" alt="" />
+                    </div>
+                    <div class="card-caption">
+                        <span>Mellow Thoughts</span>
+                        <br />
+                        <span>David Renda</span>
+                    </div>
+                </div>
+    
+                <div class="card" data-sound="./music/lofi/vibes.mp3" id="play" data-name="lofi">
+                    <div class="card-img">
+                        <img src="./music-images/lofi/vibe.jpg" alt="" />
+                    </div>
+                    <div class="card-caption">
+                        <span>Vibes</span>
+                        <br />
+                        <span>David Renda</span>
+                    </div>
+                </div>
+    
+    
+                <!-- motivating - 4 -->
+                <div class="card" data-sound="./music/motivating/they-said-i-cant.mp3" id="play" data-name="motivating">
+                    <div class="card-img">
+                        <img src="./music-images/nature-melodies/bioluminescent-waves.jpg" alt="" />
+                    </div>
+                    <div class="card-caption">
+                        <span>They Said I Can't</span>
+                        <br />
+                        <span>David Fesliyan</span>
+                    </div>
+                </div>
+    
+                <div class="card" data-sound="./music/motivating/inspired-thinking.mp3" id="play" data-name="motivating">
+                    <div class="card-img">
+                        <img src="./music-images/motivating/inspired thinking.jpg" alt="" />
+                    </div>
+                    <div class="card-caption">
+                        <span>Inspired Thinking</span>
+                        <br />
+                        <span>Steve Oxen</span>
+                    </div>
+                </div>
+    
+                <div class="card" data-sound="./music/motivating/journey-to-the-promise.mp3" id="play"
+                    data-name="motivating">
+                    <div class="card-img">
+                        <img src="./music-images/motivating/journey to the promise.jpg" alt="" />
+                    </div>
+                    <div class="card-caption">
+                        <span>Journey to the Promise</span>
+                        <br />
+                        <span>David Fesliyan</span>
+                    </div>
+                </div>
+    
+                <div class="card" data-sound="./music/motivating/tears-of-joy.mp3" id="play" data-name="motivating">
+                    <div class="card-img">
+                        <img src="./music-images/motivating/tears of joy.jpg" alt="" />
+                    </div>
+                    <div class="card-caption">
+                        <span>Tears of Joy</span>
+                        <br />
+                        <span>David Fesliyan</span>
+                    </div>
+                </div>
+    
+    
+            </div>
+    
+            <!-- neeche footer wala music panel -->
+            <div class="music-control">
+    
+                <div class="progress-container" id="progress-container">
+                    <div class="progress" id="progress"></div>
+                </div>
+    
+                <div class="navigation">
+                    <div class="navigation-music">
+                        <button class="stop-button">
+                            <i class="fas fa-pause pause"></i>
+                        </button>
+                        <div class="volume-container">
+                            <p id="volume_show">80</p>
+                            <i class="fa fa-volume-up" aria-hidden="true" id="volume_icon"></i>
+                            <input type="range" min="0" max="100" value="80" id="volume" />
+                        </div>
+    
+                        <button class="replayBtn"><i class="fas fa-redo-alt"></i></button>
+    
+                        <button class="crossBtn"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <i class="fa-solid fa-house-chimney abc"></i>
+            <i class="fa-solid fa-music" ></i>
+            <i class="fa-solid fa-mountain" ></i>
+            <i class="fa-solid fa-heart-pulse"></i>
+            <i class="fa-sharp fa-solid fa-comments"></i>
+        </footer>
+    </div>
+    <script src="music.js"></script>
+</body>
+</html>
