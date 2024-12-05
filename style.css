@@ -341,6 +341,7 @@ body{
                     font-weight: 700;
                     font-size: 1.1rem;
                     border-radius: 10px;
+                    cursor: pointer;
 
                     
                 }
@@ -473,7 +474,7 @@ body::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
+    background: #53AEE1;
 }
 
 #loading h3 {
@@ -484,7 +485,7 @@ body::before {
 }
 
 #loading h3 span{
-    color: rgba(0, 0, 0, 0.0);
+    color: #53AEE1;
     animation: lightmove 8s linear infinite;
     animation-delay: calc(0.2s * var(--i));
 }
@@ -492,7 +493,7 @@ body::before {
 @keyframes lightmove {
     0%{
         opacity: 0;
-        color: rgba(0,0,0,0.0);
+        color: #53AEE1;
     }
     20%{
         opacity: 1;
@@ -501,10 +502,10 @@ body::before {
     
     50%{
         opacity: 0;
-        color: rgba(0,0,0,0.0);
+        color: #53AEE1;
     }
     100%{
         opacity: 0;
-        color: rgba(0,0,0,0.0);
+        color: rgba(255, 255, 255, 0.8);
     }
 }
